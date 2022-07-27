@@ -1,0 +1,10 @@
+.footerMain {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(28, 28, 28);
+  column-gap: 20px;
+}
+.ourContacts {
+  color: aliceblue;
+}

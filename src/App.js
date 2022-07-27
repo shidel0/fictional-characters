@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Footer from "./Components/Footer";
+import ColorSchemesExample from "./Components/Header";
+import Section from "./Components/Section";
 
-function App() {
+const users = [
+  { id: 1, name: "Anna", lastName: "Shaman", age: 13 },
+  { id: 2, name: "Shizui", lastName: "Takidzava", age: 26 },
+  { id: 4, name: "Yoma", lastName: "Sukihira", age: 18 },
+  { id: 5, name: "Naruto", lastName: "Udzumaki", age: 32 },
+  { id: 6, name: "Kazuha", lastName: "Lishimiya", age: 18 },
+  { id: 7, name: "Nikita", lastName: "Hrushew", age: 62 },
+];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ColorSchemesExample />
+      <Section users={users} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
